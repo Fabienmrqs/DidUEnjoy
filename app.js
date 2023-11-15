@@ -1,19 +1,12 @@
-var kpi_created = document.getElementById('kpi_created');
 var cards_settings = document.getElementById('card_settings');
 var kpi_ico_info = document.getElementById('kpi_satisfaction_ico_info');
 
 
-
-kpi_created.addEventListener('click', changeBorderBlue )
-
-
-
   function createKPI(){
     const kpiDiv = document.createElement("div");
-    kpiDiv.id = 'kpi_created'
      kpiDiv.classList.add("kpi_created_display_block");
 
-     kpiDiv.addEventListener('click', function(e) {
+     kpiDiv.addEventListener('click', function() {
         kpiDiv.style.border='solid blue';
         cards_settings.style.display ="block";
         if(document.forms['card_settings_form'].kpi_name.value === "") {
