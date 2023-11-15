@@ -6,6 +6,96 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+
+    <header class="header">
+        <nav class="nav">
+          <nav class="nav_title">My Diduenjoy Test case</nav>
+        </nav>
+    </header>
+
+    <section id="kpi_container" class="kpi_container">
+        <div class="kpi_satisfaction">
+            <div class="kpi_satisfaction_title_container">
+                <div class="kpi_satisfacetion_title">NPS</div>
+                <div class="ico_info_container">
+                    <img id="kpi_satisfaction_ico_info" src="./assets/img/ico/24/actions/info_outined.svg" alt="" class="kpi_satisfaction_ico_info">
+
+                </div>
+                <img src="./assets/img/heroicons-mini/sparkles.svg" alt="" class="kpi_satisfaction_ico">
+                <div class="kpi_satisfaction_showTextHover">KPI explanation</div>
+            </div>
+            <div class="kpi_satisfaction_value_container">
+                <div class="kpi_satisfaction_value">74</div>
+                <img src="./assets/img/trend.svg" alt="" class="kpi_satisfaction_trend">
+            </div>
+           
+        </div>
+        <div onclick="createKPI()" class="kpi_empty">+</div>
+        <div id="kpi_created" class="kpi_created"></div>
+    </section>
+
+    <section id="card_settings" class="card_settings">
+        <form name="card_settings_form">
+        <div class="card_settings_title">Card settings</div>
+        <div class="card_settings_kpi_name_container">
+            <div class="card_settings_kpi_name_title">KPI name</div>
+            <input type="text" name="kpi_name" placeholder="Element name" class="card_settings_kpi_name_input">
+        </div>
+        </form>
+
+
+        <div class="card_settings_tooltip_container">
+            <div class="card_settings_tooltip_title">Tooltip</div>
+            <textarea placeholder="Element name" class="card_settings_tooltip_input" ></textarea>
+        </div>
+
+        <div class="card_settings_icons_container">
+            <div class="card_settings_icons_title">Icon</div>
+            <div class="card_settings_icons_flex">
+              <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/bolt.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/chart-pie.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/chat-bubble-left-ellipsis.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/globe-europe-africa.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/flag.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/inbox.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/squares-2x2.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/rocket-launch.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/rectangle-stack.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/paper-airplane.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/newspaper.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/arrow-up-right-top.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/arrow-up-right.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/bell-alert.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/sparkles.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/clock.svg" alt=""></div>
+            <div class="card_settings_icons"><img src="./assets/img/heroicons-mini/check-circle.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="card_settings_value_container">
+            <div class="card_settings_value_title">Value</div>
+            <input type="text" placeholder="Enter a value" class="card_settings_value_input">
+        </div>
+
+        <div class="card_settings_trend_container">
+            <div class="card_settings_trend_title">Trend</div>
+            <div class="card_settings_trend_dropdown">
+                <button onclick="dropDown()" class="card_settings_trend_input"> Enter a value</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Positive</a>
+                    <a href="#about">Neutral</a>
+                    <a href="#contact">Negative</a>
+                  </div>
+            </div>
+         
+        </div>
+        <div class="card_settings_button_flex_end">
+            <div class="card_settings_button_container">
+                <img class="card_settings_button_icon" src="./assets/img/ico/24/actions/refresh.svg" alt="">
+                <div class="card_settings_button">Update KPI</div>
+            </div>
+        </div>
+       
+    </section>
+    <script src="./app.js"></script>
 </body>
 </html>
